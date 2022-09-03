@@ -1,0 +1,25 @@
+
+.priceList{
+    li:not(:last-child){
+        border-bottom: 1px solid #C1C1C1;
+    }
+    .material-icons{
+        line-height: 32px;
+        height: 32px;
+        width: 32px;
+        text-align: center;
+    }
+}
+
+.list-style-success{
+    display: flex;
+    align-items: center;
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background: #62DB54;
+        margin-right: 8px;
+    }
+}

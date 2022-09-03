@@ -1,0 +1,356 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main>
+  <section class="banner d-flex flex-column justify-content-center">
+    <div class="container">
+      <div class="banner-text mx-auto py-5 text-center position-relative">
+        <h1 class="fs-3">
+          <span class="text-gradient">全台最豐富的程式家教</span><br>
+          在實踐中化理想為現實
+        </h1>
+        <p class="fs-8 pt-5">全台最專業師資｜到府程式家教｜客製化課程</p>
+        <!--square-->
+        <div class="square position-absolute top-0 start-0 translate-middle"></div>
+        <div class="square position-absolute top-0 start-100 translate-middle"></div>
+        <div class="square position-absolute top-100 start-100 translate-middle"></div>
+        <div class="square position-absolute top-100 start-0 translate-middle"></div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="feature bg-secondary text-primary py-6 py-md-8">
+    <div class="container">
+      <div class="row row-cols-1 g-4 align-items-center">      
+        <div class="col col-xl-3">
+          <h2 class="fs-3 h2-decoration text-center text-xl-start">手把手帶你<br>親自到家教到會</h2>
+        </div>
+        <div class="col col-xl-9">
+          <ul class="row gy-4 row-cols-lg-3 row-cols-1 justify-content-center text-center">
+            <li class="col col-md-9 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body py-7 px-4">
+                  <a href="#" class="material-icons fs-1 pb-4 stretched-link">code</a>
+                  <h3 class="pb-3 fs-5">超過 100 種專業課程</h3>
+                  <p class="fs-5">學習標準化的電腦形式語言<br>培養運算思維和邏輯素養</p>
+                </div>
+              </div>
+            </li>
+            <li class="col col-md-9 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body py-7 px-4">
+                  <a href="#" class="material-icons fs-1 pb-4 stretched-link">rocket_launch</a>
+                  <h3 class="pb-3 fs-5">高效學習</h3>
+                  <p class="fs-5">客製化專屬課表<br>讓學習變簡單</p>
+                </div>
+              </div>
+            </li>
+            <li class="col col-md-9 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body py-7 px-4">
+                  <a href="#" class="material-icons fs-1 pb-4 stretched-link">fmd_good</a>
+                  <h3 class="pb-3 fs-5">超過 100 種專業課程</h3>
+                  <p class="fs-5">專業老師到你指定的地點<br>一對一高效學習</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 上課流程 -->
+  <section class="bg-gray-dark py-6 py-md-8">
+    <div class="container">
+      <h2 class="fs-3 h2-decoration text-center mb-7">預期上課流程</h2>
+      <ul class="row row-cols-md-2 row-cols-xl-4 gx-4 gy-7 pt-3"> 
+        <li>
+          <div class="p-7 h-100 position-relative border border-white rounded">
+            <span class="fw-bold text-success bg-gray-dark fs-1 px-2 mx-n2 position-absolute top-0 translate-middle-y">01</span>
+            <h3 class="fs-3 pb-3">預約</h3>
+            <p class="fs-5">線上預約指定課程與老師<br>由老師安排專屬課程</p>
+          </div>
+        </li>
+        <li>
+          <div class="p-7 h-100 position-relative border border-white rounded">
+            <span class="fw-bold text-success bg-gray-dark fs-1 px-2 mx-n2 position-absolute top-0 translate-middle-y">02</span>
+            <h3 class="fs-3 pb-3">付款</h3>
+            <p class="fs-5">支援各種支付方式<br>提供12期分期付款</p>
+          </div>
+        </li>
+        <li>
+          <div class="p-7 h-100 position-relative border border-white rounded">
+            <span class="fw-bold text-success bg-gray-dark fs-1 px-2 mx-n2 position-absolute top-0 translate-middle-y">03</span>
+            <h3 class="fs-3 pb-3">上課</h3>
+            <p class="fs-5">地點由您指定<br>密集性一對一教學</p>
+          </div>
+        </li>
+        <li>
+          <div class="p-7 h-100 position-relative border border-white rounded">
+            <span class="fw-bold text-success bg-gray-dark fs-1 px-2 mx-n2 position-absolute top-0 translate-middle-y">04</span>
+            <h3 class="fs-3 pb-3">提供滿意度</h3>
+            <p class="fs-5">提供課程滿意度及回饋<br>讓我們持續成長與進步</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="language bg-gray py-6 py-md-8">
+    <div class="container">
+      <h2 class="fs-3 h2-decoration text-center mb-4"><span>你想要學習的程式，</span><span>都在這裡</span></h2>
+      <!-- Swiper -->
+      <div class="swiper languageSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><p class="border border-white">JavaScript</p></div>
+          <div class="swiper-slide"><p class="border border-white">HTML/CSS</p></div>
+          <div class="swiper-slide"><p class="border border-white">SQL</p></div>
+          <div class="swiper-slide"><p class="border border-white">Java</p></div>
+          <div class="swiper-slide"><p class="border border-white">SQL</p></div>
+          <div class="swiper-slide"><p class="border border-white">Bash/Shell</p></div>
+          <div class="swiper-slide"><p class="border border-white">Python</p></div>
+          <div class="swiper-slide"><p class="border border-white">Python</p></div>
+          <div class="swiper-slide"><p class="border border-white">PHP</p></div>
+          <div class="swiper-slide"><p class="border border-white">C++</p></div>
+          <div class="swiper-slide"><p class="border border-white">Ruby</p></div>        
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="course py-6 py-md-8">
+    <div class="container">
+      <h2 class="fs-3 h2-decoration text-center mb-3">熱門推薦課程</h2>
+      <ul class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+        <li class="col">
+          <div class="card h-100 bg-gray">
+            <div class="card-header text-center px-5 py-4">
+              <img src="./assets/images/teacher01.jpg" class="teacher-pic rounded-circle mb-2" alt="teacher01">
+              <p>Belinda</p>
+            </div>
+            <div class="card-body pt-0 pb-5 px-5 pb-xl-4">
+              <h3 class="card-title fs-4">基礎前端 - HTML<br><br></h3>
+              <p class="text-success pb-2">前端語言</p>
+              <p class="card-text">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
+            </div>
+            <p class="card-footer py-3 text-center border-top border-gray-c1">
+              <span>50分鐘</span><span class="ps-2 fs-2 font-monospace align-middle">NT$1600</span>
+            </p>
+          </div>
+        </li>
+        <li class="col">
+          <div class="card h-100 bg-gray">
+            <div class="card-header text-center px-5 py-4">
+              <img src="./assets/images/teacher02.jpg" class="teacher-pic rounded-circle mb-2" alt="teacher02">
+              <p>Guava</p>
+            </div>
+            <div class="card-body pt-0 pb-5 px-5 pb-xl-4">
+              <h3 class="card-title fs-4">2022 Python 全攻略｜從入門到實務</h3>
+              <p class="text-success pb-2">後端語言</p>
+              <p class="card-text">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態型別系...</p>
+            </div>
+            <p class="card-footer py-3 text-center border-top border-gray-c1">
+              <span>50分鐘</span><span class="ps-2 fs-2 font-monospace align-middle">NT$2200</span>
+            </p>
+          </div>
+        </li>
+        <li class="col">
+          <div class="card h-100 bg-gray">
+            <div class="card-header text-center px-5 py-4">
+              <img src="./assets/images/teacher03.jpg" class="teacher-pic rounded-circle mb-2" alt="teacher03">
+              <p>Joe</p>
+            </div>
+            <div class="card-body pt-0 pb-5 px-5 pb-xl-4">
+              <h3 class="card-title fs-4">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h3>
+              <p class="text-success pb-2">行動應用開發</p>
+              <p class="card-text">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡單的...</p>
+            </div>
+            <p class="card-footer py-3 text-center border-top border-gray-c1">
+              <span>50分鐘</span><span class="ps-2 fs-2 font-monospace align-middle">NT$1800</span>
+            </p>
+          </div>
+        </li>
+        <li class="col">
+          <div class="card h-100 bg-gray">
+            <div class="card-header text-center px-5 py-4">
+              <img src="./assets/images/teacher04.jpg" class="teacher-pic rounded-circle mb-2" alt="teacher04">
+              <p>Lina</p>
+            </div>
+            <div class="card-body pt-0 pb-5 px-5 pb-xl-4">
+              <h3 class="card-title fs-4">Linux 零基礎七天入門｜入門到實務</h3>
+              <p class="text-success pb-2">作業系統與伺服器</p>
+              <p class="card-text">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用工具。...</p>
+            </div>
+            <p class="card-footer py-3 text-center border-top border-gray-c1">
+              <span>50分鐘</span><span class="ps-2 fs-2 font-monospace align-middle">NT$1100</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="pt-4 pt-xl-7 text-center"><a href="course.html" class="btn btn-gradient py-2 px-5">所有課程列表</a></div>
+      
+    </div>
+  </section>
+  
+  <section class="feature2">    
+    <ul class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-0">
+      <li class="col d-flex flex-column align-items-center position-relative feature2-item feature2-item-1">
+        <div class="feature2-text text-center text-lg-start">
+          <a href="#" class="material-icons stretched-link mb-3">question_answer</a>        
+          <h3 class="fs-3 pb-3 mb-5 position-relative h3-decoration">對症下藥，專案製作</h3>
+          <p>除了可以瘋狂提問之外<br>還有機會一起完成專案</p>
+        </div>
+      </li>
+      
+      <li class="col d-flex flex-column align-items-center position-relative feature2-item feature2-item-2">
+        <div class="feature2-text text-center text-lg-start">
+          <a href="#" class="material-icons stretched-link mb-3">tips_and_updates</a>        
+          <h3 class="fs-3 pb-3 mb-5 position-relative h3-decoration">激發你的學習潛力</h3>
+          <p>進度制課程安排&個人化學習建議<br>有效管理你的學習動力</p>
+        </div>
+      </li>
+      
+      <li class="col d-flex flex-column align-items-center position-relative feature2-item feature2-item-3">
+        <div class="feature2-text text-center text-lg-start">
+          <a href="#" class="material-icons stretched-link mb-3">thumb_up_alt</a>        
+          <h3 class="fs-3 pb-3 mb-5 position-relative h3-decoration">學習效率</h3>
+          <p>針對學員狀況調整內容與步調<br>學習精準最有效</p>
+        </div>
+      </li>
+      
+      <li class="col d-flex flex-column align-items-center position-relative feature2-item feature2-item-4">
+        <div class="feature2-text text-center text-lg-start">
+          <a href="#" class="material-icons stretched-link mb-3">supervisor_account</a>        
+          <h3 class="fs-3 pb-3 mb-5 position-relative h3-decoration">一對一指導</h3>
+          <p>針對目的進行客製化課程安排<br>快速的學以致用</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  
+  <section class="article bg-gray-dark py-6 py-md-8">
+    <div class="container">
+      <h2 class="fs-3 h2-decoration text-center mb-3 mb-lg-">文章分享</h2>
+      <ul class="row row row-cols-1 row-cols-lg-3 g-4 mt-4">
+        <li class="col">
+          <div class="card position-relative p-5">
+            <img src="./assets/images/article01.jpg" class="pb-3" alt="article-01">
+            <h3 class="fs-5 pb-3">2022 前端開發者學習地圖</h3>
+            <p class="pb-3">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
+            <a href="#" class="font-monospace text-success fs-5 align-self-end stretched-link">MORE</a>
+            <div class="article-border article-border-topLeft top-0 start-0"></div>
+            <div class="article-border article-border-topRight top-0 end-0"></div>
+            <div class="article-border article-border-bottomLeft bottom-0 start-0"></div>
+            <div class="article-border article-border-bottomRight bottom-0 end-0"></div>
+          </div>
+        </li>
+        <li class="col">
+          <div class="card position-relative p-5">
+            <img src="./assets/images/article02.jpg" class="pb-3" alt="article-02">
+            <h3 class="fs-5 pb-3">軟體工程師有哪些類別</h3>
+            <p class="pb-3">軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務</p>
+            <a href="#" class="font-monospace text-success fs-5 align-self-end stretched-link">MORE</a>
+            <div class="article-border article-border-topLeft top-0 start-0"></div>
+            <div class="article-border article-border-topRight top-0 end-0"></div>
+            <div class="article-border article-border-bottomLeft bottom-0 start-0"></div>
+            <div class="article-border article-border-bottomRight bottom-0 end-0"></div>
+          </div>
+        </li>
+        <li class="col">
+          <div class="card position-relative p-5">
+            <img src="./assets/images/article03.jpg" class="pb-3" alt="article-03">
+            <h3 class="fs-5 pb-3">免費 25 小時前端教學資源</h3>
+            <p class="pb-3">軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務</p>
+            <a href="#" class="font-monospace text-success fs-5 align-self-end stretched-link">MORE</a>
+            <div class="article-border article-border-topLeft top-0 start-0"></div>
+            <div class="article-border article-border-topRight top-0 end-0"></div>
+            <div class="article-border article-border-bottomLeft bottom-0 start-0"></div>
+            <div class="article-border article-border-bottomRight bottom-0 end-0"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="review py-6 py-md-8">
+    <div class="container">
+      <h2 class="fs-3 h2-decoration text-center mb-4 mb-lg-7">專屬你的學習課程<br>超過 3000 位學員得到了程式超能力</h2>
+      <!-- Swiper -->
+      <div class="row g-0 justify-content-center">
+        <div class="col-lg-9">
+          <div class="swiper reviewSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">              
+                <div class="review-pic">
+                  <img src="./assets/images/share.jpg" alt="review-pic">
+                </div> 
+                <div class="review-text bg-white">
+                  <img src="./assets/images/student01.jpg" class="review-student rounded-circle" alt="review-student">
+                  <h3 class="fw-bold fs-5 pb-3">老師很有耐心</h3>
+                  <p class="text-start">老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
+                </div>
+              </div>
+              <div class="swiper-slide">              
+                <div class="review-pic">
+                  <img src="https://picsum.photos/id/20/800/580" alt="review-pic">
+                </div> 
+                <div class="review-text bg-white">
+                  <img src="./assets/images/student02.jpg" class="review-student rounded-circle" alt="review-student">
+                  <h3 class="fw-bold fs-5 pb-3">老師很有耐心</h3>
+                  <p class="text-start">老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
+                </div>
+              </div>
+              <div class="swiper-slide">              
+                <div class="review-pic">
+                  <img src="https://picsum.photos/id/201/800/580" alt="review-pic">
+                </div> 
+                <div class="review-text bg-white">
+                  <img src="./assets/images/student03.jpg" class="review-student rounded-circle" alt="review-student">
+                  <h3 class="fw-bold fs-5 pb-3">老師很有耐心</h3>
+                  <p class="text-start">老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
+                </div>
+              </div>
+              <div class="swiper-slide">              
+                <div class="review-pic">
+                  <img src="https://picsum.photos/id/2/800/580" alt="review-pic">
+                </div> 
+                <div class="review-text bg-white">
+                  <img src="./assets/images/student04.jpg" class="review-student rounded-circle" alt="review-student">
+                  <h3 class="fw-bold fs-5 pb-3">老師很有耐心</h3>
+                  <p class="text-start">老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="review-button d-flex justify-content-center">
+              <div class="swiper-button-prev"><span class="material-icons text-success">west</span></div>
+              <div class="review-pagination w-auto mx-3"></div>
+              <div class="swiper-button-next"><span class="material-icons text-success">east</span></div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </section>
+  
+  <section class="py-6 py-md-8">
+    <div class="container">
+      <div class="join col-lg-9 bg-gray">
+        <div>
+          <span class="material-icons">menu_book</span>
+        </div>
+        <div class="text-center text-lg-start">
+          <h2 class="mb-4 mb-lg-2">加入我們成為導師</h2>
+          <p>歡迎各大程式大神加入我們，用知識在世界留下一點影響力。</p>
+        </div>
+        <div class="d-flex align-items-center flex-shrink-0">
+          <a class="btn btn-outline-primary fs-5">立即預約</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</main>

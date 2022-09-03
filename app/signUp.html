@@ -1,0 +1,115 @@
+---
+title: 課程報名
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main>
+    <section class="signUp-timeline pt-4 pb-4 pt-lg-5 pb-lg-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-9 col-lg-7 timeline">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-lg-5">
+                    <div class="timeline-pointer text-center step-1 active">
+                        <p>課程報名</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="timeline-pointer text-center step-2">
+                        <p>信用卡付款</p>
+                    </div>
+                </div>
+                <div class="col-3 col-lg-5">
+                    <div class="timeline-pointer text-center step-3">
+                        <p>付款成功</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-6 py-lg-7">
+        <div class="container">
+            <div class="row g-lg-0 align-items-center pb-lg-8 mb-lg-3">
+                <div class="col-lg-4 position-relative">
+                    <div class="card signUp-card h-100 bg-gray rounded-0 p-4 px-lg-5 py-lg-7">
+                        <div class="card-body p-0">
+                            <img src="./assets/images/teacher01.jpg" class="teacher-pic rounded-circle border border-3 border-success mb-3 mb-lg-4" alt="teacher01">
+                            <h3 class="card-title fs-6 pb-lg-1 text-center">2022 Python 全攻略｜從入門到實務</h3>
+                            <p class="text-success pb-2 text-center">前端語言</p>
+                            <p class="card-text">帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 me-lg-7 ms-lg-n7">
+                    <form action="signUp-payment.html" method="get" class="signUp-form bg-gray-dark p-4 py-lg-7 px-lg-5">
+                        <h1 class="fs-3 text-center mb-4 mb-lg-7">課程報名</h1>
+                        <fieldset class="mb-5">
+                            <legend class="fs-5 text-center text-lg-start fw-bold mb-3">選擇付款方式</legend>
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="payment" value="credit_card" id="paymentRadio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-primary p-3 px-lg-5" for="paymentRadio1">信用卡付款</label>
+                                
+                                <input type="radio" class="btn-check" name="payment" value="cvs" id="paymentRadio2" autocomplete="off">
+                                <label class="btn btn-outline-primary p-3 px-lg-5" for="paymentRadio2">超商繳款</label>
+                                
+                                <input type="radio" class="btn-check" name="payment" value="atm" id="paymentRadio3" autocomplete="off">
+                                <label class="btn btn-outline-primary p-3 px-lg-5" for="paymentRadio3">ATM 轉帳</label>
+                                
+                                <input type="radio" class="btn-check" name="payment" value="installment" id="paymentRadio4" autocomplete="off">
+                                <label class="btn btn-outline-primary p-3 px-lg-5" for="paymentRadio4">12期分期付款</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="fs-5 text-center text-lg-start fw-bold mb-3">訂單資訊</legend>
+                            <div class="row row-cols-1 row-cols-lg-2 mb-3 mb-lg-4">
+                                <div class="col mb-3 mb-lg-0">
+                                    <label for="SignUp-Name" class="form-label">姓名</label>
+                                    <input type="text" name="name" class="form-control" id="SignUp-Name" placeholder="請輸入姓名">
+                                </div>
+                                <div class="col">
+                                    <label for="SignUp-Phone" class="form-label">電話</label>
+                                    <input type="tel" name="tel" class="form-control" id="SignUp-Phone" placeholder="請輸入電話號碼">
+                                </div>
+                            </div>
+                            <div class="mb-3 mb-lg-4">
+                                <label for="SignUp-Email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" id="SignUp-Email" placeholder="請輸入Email">
+                            </div>
+                            <div class="row row-cols-1 row-cols-lg-2 mb-3 mb-lg-4">
+                                <div class="col mb-3 mb-lg-0">
+                                    <p class="form-label">課程</p>
+                                    <select class="lesson-select form-select" aria-label="lessons select">
+                                        <option name="lesson" value="0" selected>請選擇課程</option>
+                                        <option name="lesson" value="1">1堂50分鐘</option>
+                                        <option name="lesson" value="2">3堂50分鐘</option>
+                                        <option name="lesson" value="3">10堂50分鐘</option>
+                                        <option name="lesson" value="4">20堂50分鐘</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <p class="form-label">想預約的日期</p>
+                                    <input type="text" class="form-control" name="datepicker" placeholder="請選擇日期">
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="SignUp-Place" class="form-label">上課地點</label>
+                                <input type="text" name="place" class="form-control" id="SignUp-Place" placeholder="請輸入上課地點">
+                            </div>
+                            <div class="row row-cols-1 row-cols-lg-2">
+                                <div class="col mb-4 mb-lg-0 d-flex align-items-center">
+                                    <p class="signUp-price font-monospace fs-5"></p>
+                                </div>
+                                <div class="col text-center text-lg-end">
+                                    <input type="submit" value="前往結帳" class="btn btn-gradient btn-signUp px-lg-7">
+                                </div>
+                            </div>                            
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

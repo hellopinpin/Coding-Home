@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %> - Coding Home</title>
+  <link rel="icon" href="./assets/images/logo.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="bg-secondary">
+    <div class="container">
+      <div class="d-flex justify-content-between alighn-items-center py-4">
+        <a href="index.html" class="logo"></a>    
+        
+        <button class="btn btn-nav" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <span class="material-icons">drag_handle</span>
+        </button>    
+        
+        <nav class="collapse header-nav" id="collapseExample">
+          <ul class="nav flex-column flex-md-row">
+            <li class="nav-item">
+              <a class="nav-link active fs-5" aria-current="page" href="./index.html">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="./course.html">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" role="button" data-bs-toggle="modal" data-bs-target="#loginModal"><span class="material-icons">account_circle</span><span>登入</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Modal -->
+  <div class="modal fade loginModal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border border-white bg-gray pb-3 pb-lg-4">
+        <div class="modal-header position-relative">
+          <h4 class="modal-title text-center fs-3 flex-grow-1" id="loginModalLabel">登入</h4>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-0 pt-lg-2 pb-lg-4">
+          <form>
+            <div class="mb-3 mb-lg-4">
+              <label for="loginInputEmail" class="form-label">信箱</label>
+              <input type="email" class="form-control" id="loginInputEmail" aria-describedby="emailHelp" placeholder="請輸入信箱">
+            </div>
+            <div class="mb-3 mb-lg-4">
+              <label for="loginInputPassword" class="form-label">密碼</label>
+              <input type="password" class="form-control" id="loginInputPassword" placeholder="請輸入密碼">
+            </div>          
+            <button type="submit" class="btn btn-gradient w-100" data-bs-dismiss="modal">登入</button>
+          </form>
+          
+        </div>
+        <div class="modal-footer gap-3">
+          <h5 class="loginWith fs-6 text-gray-c1 w-100">其他登入方式</h5>
+          <button type="button" class="btn-loginWith btn btn-outline-primary w-100 rounded-1"><img src="./assets/images/icon_fb.svg" alt="facebook">Facebook 登入</button>
+          <button type="button" class="btn-loginWith btn btn-outline-primary w-100 rounded-1"><img src="./assets/images/icon_google.svg" alt="google">Google 登入</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <%- contents %>
+  
+  <footer class="py-3">
+    <p class="fs-8 my-0 text-center font-monospace">Coding Home © 2022 All Rights Reserved</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

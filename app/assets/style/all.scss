@@ -1,0 +1,12 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "./helpers/custom";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import "./base";
+@import "./utilities";
+@import "./layout/layout";
+@import './pages/index';
+@import './pages/course';
+@import './pages/course-basic';
+@import './pages/signUp';
